@@ -19,7 +19,7 @@ export default function RootLayout({
 	return (
 		<html lang='en'>
 			<body className={inter.className}>
-				<Header data={{ name: aboutMeData.name, pages }} />
+				<Header name={aboutMeData.name} pages={pages} />
 				{children}
 				<Footer />
 			</body>

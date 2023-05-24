@@ -1,9 +1,15 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
+interface IPages {
+	id: number
+	label: string
+	link: string
+}
+
 type Props = {
 	name: string
-	pages: string[]
+	pages: IPages[]
 }
 
 const Header = ({ name, pages }: Props) => {
@@ -11,18 +17,11 @@ const Header = ({ name, pages }: Props) => {
 		<header>
 			<div className=''>
 				<nav>
-					{data.map((page) => (
-						<Link
-							aria-label={page.label}
-							href={page.id}
-							href={page.link}
-							className=''
-						>
-							{page.label}
-						</Link>
+					{pages.map((page) => (
+						<Link key={page.id} href={page.link}></Link>
 					))}
 				</nav>
-				<h1>{data.name}</h1>
+				<h1>{name}</h1>
 			</div>
 			{/* <Image
 				priority
