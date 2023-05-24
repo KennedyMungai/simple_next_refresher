@@ -1,8 +1,10 @@
 import Image from 'next/image'
 
-type Props = {}
+type Props = {
+	data: any
+}
 
-const Header = (props: Props) => {
+const Header = ({ data }: Props) => {
 	return (
 		<header>
 			<div className=''>
