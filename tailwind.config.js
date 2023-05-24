@@ -35,7 +35,39 @@ module.exports = {
 			0: '0',
 			100: '100px'
 		},
-		extend: {}
+		extend: {
+			width: {
+				'1/3-g': '30%'
+			},
+			minHeight: {
+				50: '55px'
+			},
+			boxShadow: {
+				footer: '0px -7px 41px 3px rgba(175, 175, 175, 0.25)'
+			},
+			// backgroundImage: {
+			//   header: {
+			//     "linear-gradient(98.85deg, #557AFF 7.8%, rgba(239, 252, 255, 0))"
+			//   }
+			// },
+			spacing: {
+				'8xl': '96rem',
+				'9xl': '128rem'
+			},
+			borderRadius: {
+				'4xl': '2rem'
+			},
+			flexBasis: {
+				'4/5': '66%'
+			}
+		},
+		screens: {
+			sm: '640px',
+			md: '768px',
+			lg: '1024px',
+			xl: '1280px',
+			'2xl': '1536px'
+		}
 	},
 	plugins: []
 }
