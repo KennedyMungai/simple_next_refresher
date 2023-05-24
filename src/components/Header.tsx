@@ -1,7 +1,15 @@
 import Image from 'next/image'
 
+interface myData {
+	name: string
+	title: string
+	body: string
+	highlightedBody: string
+	body2: string
+}
+
 type Props = {
-	data: any
+	data: myData
 }
 
 const Header = ({ data }: Props) => {
