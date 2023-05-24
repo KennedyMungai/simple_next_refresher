@@ -5,7 +5,10 @@ type Props = {}
 const Header = (props: Props) => {
 	return (
 		<header>
-			<div className=''></div>
+			<div className=''>
+				<nav>3 Links</nav>
+				<h1>Kijana Mangaa</h1>
+			</div>
 			<Image
 				priority
 				height={400}
