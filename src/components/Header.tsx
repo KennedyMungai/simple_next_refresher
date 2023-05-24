@@ -17,9 +17,18 @@ const Header = ({ name, pages }: Props) => {
 		<header>
 			<div className=''>
 				<nav>
-					{pages.map((page) => (
-						<Link key={page.id} href={page.link}></Link>
-					))}
+					{pages.map((page) => {
+						return (
+							<Link
+								aria-label={page.label}
+								key={page.id}
+								href={page.link}
+								className=''
+							>
+								{page.label}
+							</Link>
+						)
+					})}
 				</nav>
 				<h1>{name}</h1>
 			</div>
