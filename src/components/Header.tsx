@@ -36,7 +36,7 @@ const Header = ({ name, pages }: Props) => {
 				priority
 				height={400}
 				width={2000}
-				className='w-full h-48 object-cover object-top absolute'
+				className='w-full h-48 object-cover object-top absolute mb-6'
 				src={'/images/jeshoots-com-pUAM5hPaCRI-unsplash.jpg'}
 				alt='Some Image'
 				aria-label=''
