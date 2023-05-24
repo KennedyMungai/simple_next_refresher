@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-interface myData {
+interface IMyData {
 	name: string
 	title: string
 	body: string
@@ -9,7 +9,7 @@ interface myData {
 }
 
 type Props = {
-	data: myData
+	data: IMyData
 }
 
 const Header = ({ data }: Props) => {
