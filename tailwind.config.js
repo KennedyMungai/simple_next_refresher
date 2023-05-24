@@ -31,6 +31,10 @@ module.exports = {
 			'5xl': '3.052rem',
 			'6xl': '3.5rem'
 		},
+		minWidth: {
+			0: '0',
+			100: '100px'
+		},
 		extend: {}
 	},
 	plugins: []
