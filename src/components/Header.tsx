@@ -9,7 +9,7 @@ const Header = ({ data }: Props) => {
 		<header>
 			<div className=''>
 				<nav>3 Links</nav>
-				<h1>Kijana Mangaa</h1>
+				<h1>{data.name}</h1>
 			</div>
 			<Image
 				priority
