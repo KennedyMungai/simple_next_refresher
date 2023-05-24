@@ -15,6 +15,11 @@ module.exports = {
 			green: '#68F590',
 			white: '#FFFFFF'
 		},
+		fontFamily: {
+			sans: ['Georgia', 'sans-serif'],
+			serif: ['Merriweather', 'serif'],
+			display: ['Oswald']
+		},
 		extend: {}
 	},
 	plugins: []
