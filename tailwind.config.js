@@ -45,11 +45,11 @@ module.exports = {
 			boxShadow: {
 				footer: '0px -7px 41px 3px rgba(175, 175, 175, 0.25)'
 			},
-			// backgroundImage: {
-			//   header: {
-			//     "linear-gradient(98.85deg, #557AFF 7.8%, rgba(239, 252, 255, 0))"
-			//   }
-			// },
+			backgroundImage: {
+			  header: {
+			    "linear-gradient(98.85deg, #557AFF 7.8%, rgba(239, 252, 255, 0) 139.35%)"
+			  }
+			},
 			spacing: {
 				'8xl': '96rem',
 				'9xl': '128rem'
