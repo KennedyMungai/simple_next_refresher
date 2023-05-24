@@ -1,25 +1,30 @@
 import Image from 'next/image'
-
-interface IMyData {
-	name: string
-	title: string
-	body: string
-	highlightedBody: string
-	body2: string
-}
+import Link from 'next/link'
 
 type Props = {
-	data: IMyData
+	name: string
+	pages: string[]
 }
 
-const Header = ({ data }: Props) => {
+const Header = ({ name, pages }: Props) => {
 	return (
 		<header>
 			<div className=''>
-				<nav>3 Links</nav>
+				<nav>
+					{data.map((page) => (
+						<Link
+							aria-label={page.label}
+							href={page.id}
+							href={page.link}
+							className=''
+						>
+							{page.label}
+						</Link>
+					))}
+				</nav>
 				<h1>{data.name}</h1>
 			</div>
-			<Image
+			{/* <Image
 				priority
 				height={400}
 				width={2000}
@@ -27,7 +32,7 @@ const Header = ({ data }: Props) => {
 				src={}
 				alt=''
 				aria-label=''
-			/>
+			/> */}
 		</header>
 	)
 }
