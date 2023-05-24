@@ -32,15 +32,15 @@ const Header = ({ name, pages }: Props) => {
 				</nav>
 				<h1>{name}</h1>
 			</div>
-			{/* <Image
+			<Image
 				priority
 				height={400}
 				width={2000}
 				className=''
-				src={}
+				src={'/images/jeshoots-com-pUAM5hPaCRI-unsplash.jpg'}
 				alt=''
 				aria-label=''
-			/> */}
+			/>
 		</header>
 	)
 }
