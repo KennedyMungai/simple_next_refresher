@@ -28,7 +28,17 @@ export default function Home() {
 				<div>
 					<p className='flex flex-col w-7/12'>{aboutMeData.body2}</p>
 				</div>
-				<div>Image</div>
+				<div>
+					<Image
+						priority='false'
+						width={640}
+						height={960}
+						aria-label='Some Image'
+						alt='Some Image'
+						src='/images/kaitlyn-baker-vZJdYl5JVXY-unsplash.jpg'
+						className='h-250 object-cover w-500'
+					/>
+				</div>
 			</section>
 		</main>
 	)
