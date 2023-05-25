@@ -7,12 +7,12 @@ export default function Home() {
 			<section className='flex flex-row w-10/12 mt-10 items-center mb-6'>
 				<div className='w-1/3'>
 					<Image
-						width={}
-						height={}
-						aria-label={}
-						alt=''
-						src={}
 						priority={false}
+						width={640}
+						height={960}
+						aria-label={'Portfolio Owner Image'}
+						alt='Portfolio Owner Image'
+						src={'/images/jurica-koletic-7YVZYZeITc8-unsplash.jpg'}
 					/>
 				</div>
 				<div>
