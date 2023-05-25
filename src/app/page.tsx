@@ -2,8 +2,8 @@ import { aboutMeData } from '@/components/data/data'
 
 export default function Home() {
 	return (
-		<main>
-			<section>
+		<main className='flex flex-col items-center'>
+			<section className='flex flex-row w-10/12 mt-10 items-center mb-6'>
 				<div>Image</div>
 				<div>
 					<h2>{aboutMeData.title}</h2>
