@@ -21,7 +21,9 @@ export default function Home() {
 					<p className='text-base'>{aboutMeData.body}</p>
 				</div>
 			</section>
-			<section>{aboutMeData.highlightedBody}</section>
+			<section className='bg-blue-light w-full my-8 p-10 h-full'>
+				{aboutMeData.highlightedBody}
+			</section>
 			<section>
 				<div>{aboutMeData.body2}</div>
 				<div>Image</div>
