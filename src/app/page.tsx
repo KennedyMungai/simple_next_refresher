@@ -24,11 +24,11 @@ export default function Home() {
 			<section className='bg-blue-light my-8 p-10 h-full flex flex-col sm:w-7/12 w-full'>
 				{aboutMeData.highlightedBody}
 			</section>
-			<section className='flex flex-col w-10/12 items-center sm:flex-row'>
+			<section className='flex flex-col w-10/12 items-center sm:flex-row my-10'>
 				<div>
 					<p className='flex flex-col w-7/12'>{aboutMeData.body2}</p>
 				</div>
-				<div className='sm:w-5/12 sm:ml-10 w-full ml-0 p-10'>
+				<div className='sm:w-5/12 sm:ml-10 w-full ml-0'>
 					<Image
 						priority={false}
 						width={640}
