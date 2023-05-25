@@ -16,12 +16,12 @@ export default function Home() {
 						className='profileImage'
 					/>
 				</div>
-				<div className='sm:ml-20 w-2/3 sm:w-full mt-6 sm:mt-0'>
+				<div className='sm:ml-20 w-2/3 sm:w-full mt-6'>
 					<h2 className=''>{aboutMeData.title}</h2>
 					<p className='text-base'>{aboutMeData.body}</p>
 				</div>
 			</section>
-			<section className='bg-blue-light w-full my-8 p-10 h-full sm:w-10/12 flex flex-col sm:w-7/12 w-full'>
+			<section className='bg-blue-light my-8 p-10 h-full flex flex-col sm:w-7/12 w-full'>
 				{aboutMeData.highlightedBody}
 			</section>
 			<section className='flex flex-col w-10/12 items-center sm:flex-row'>
