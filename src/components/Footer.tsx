@@ -7,16 +7,16 @@ const Footer = (props: Props) => {
 		<footer className='w-full bg-white shadow-footer mt-12 py-4 fixed bottom-0'>
 			<div className='flex items-center justify-center gap-1'>
 				<a href={} aria-label={'Email'}>
-					<Envelope className={} />
+					<Envelope className={'icons_contactme'} />
 				</a>
 				<a href={} aria-label={'Twitter'}>
-					<Twitter className={} />
+					<Twitter className={'icons_contactme'} />
 				</a>
 				<a href={} aria-label={'LinkedIn'}>
-					<Linkedin className={} />
+					<Linkedin className={'icons_contactme'} />
 				</a>
 				<a href={} aria-label={'Medium'}>
-					<Medium className={} />
+					<Medium className={'icons_contactme'} />
 				</a>
 			</div>
 		</footer>
