@@ -16,7 +16,7 @@ export default function Home() {
 						className='profileImage'
 					/>
 				</div>
-				<div className='ml-20 w-2/3 sm:w-full mt-6 sm:mt-0'>
+				<div className='sm:ml-20 w-2/3 sm:w-full mt-6 sm:mt-0'>
 					<h2 className=''>{aboutMeData.title}</h2>
 					<p className='text-base'>{aboutMeData.body}</p>
 				</div>
