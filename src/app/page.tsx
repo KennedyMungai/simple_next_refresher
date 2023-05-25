@@ -21,7 +21,7 @@ export default function Home() {
 					<p className='text-base'>{aboutMeData.body}</p>
 				</div>
 			</section>
-			<section className='bg-blue-light w-full my-8 p-10 h-full sm:w-10/12'>
+			<section className='bg-blue-light w-full my-8 p-10 h-full sm:w-10/12 flex flex-col sm:w-7/12 w-full'>
 				{aboutMeData.highlightedBody}
 			</section>
 			<section className='flex flex-col w-10/12 items-center sm:flex-row'>
