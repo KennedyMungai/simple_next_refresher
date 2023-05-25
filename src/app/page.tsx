@@ -16,7 +16,7 @@ export default function Home() {
 						className='profileImage'
 					/>
 				</div>
-				<div>
+				<div className='ml-20 w-2/3'>
 					<h2>{aboutMeData.title}</h2>
 					<p>{aboutMeData.body}</p>
 				</div>
