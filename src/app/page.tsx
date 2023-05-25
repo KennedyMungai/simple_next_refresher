@@ -4,8 +4,8 @@ import Image from 'next/image'
 export default function Home() {
 	return (
 		<main className='flex flex-col items-center mb-32 p-10'>
-			<section className='flex flex-row w-10/12 mt-10 items-center mb-6'>
-				<div className='w-1/3'>
+			<section className='flex flex-row w-10/12 mt-10 items-center mb-6 sm:flex-col'>
+				<div className='w-1/3 sm:w-full'>
 					<Image
 						priority={false}
 						width={640}
@@ -16,7 +16,7 @@ export default function Home() {
 						className='profileImage'
 					/>
 				</div>
-				<div className='ml-20 w-2/3'>
+				<div className='ml-20 w-2/3 sm:w-full'>
 					<h2 className=''>{aboutMeData.title}</h2>
 					<p className='text-base'>{aboutMeData.body}</p>
 				</div>
