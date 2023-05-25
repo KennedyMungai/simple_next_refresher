@@ -24,7 +24,7 @@ export default function Home() {
 			<section className='bg-blue-light w-full my-8 p-10 h-full'>
 				{aboutMeData.highlightedBody}
 			</section>
-			<section>
+			<section className='flex flex-row w-10/12 items-center'>
 				<div>{aboutMeData.body2}</div>
 				<div>Image</div>
 			</section>
