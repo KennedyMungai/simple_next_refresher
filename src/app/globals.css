@@ -17,3 +17,11 @@
 .icons_contactme {
   @apply text-2xl sm:text-3xl text-black m-2
 }
+
+.profileImage {
+  @apply rounded-full;
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 40%;
+}
