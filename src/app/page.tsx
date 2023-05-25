@@ -5,7 +5,9 @@ export default function Home() {
 		<main>
 			<section>
 				<div>Image</div>
-				<div>Text</div>
+				<div>
+					<h2>{aboutMeData.title}</h2>
+				</div>
 			</section>
 			<section></section>
 			<section>
