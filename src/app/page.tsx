@@ -13,6 +13,7 @@ export default function Home() {
 						aria-label={'Portfolio Owner Image'}
 						alt='Portfolio Owner Image'
 						src={'/images/jurica-koletic-7YVZYZeITc8-unsplash.jpg'}
+						className='profileImage'
 					/>
 				</div>
 				<div>
