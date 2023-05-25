@@ -1,7 +1,7 @@
-import Image from 'next/image'
+import { aboutMeData } from '@/components/data/data'
 
 export default function Home() {
-  return (
+	return (
 		<main>
 			<section>
 				<div>Image</div>
@@ -13,5 +13,5 @@ export default function Home() {
 				<div>Image</div>
 			</section>
 		</main>
-  )
+	)
 }
