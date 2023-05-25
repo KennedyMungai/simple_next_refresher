@@ -15,5 +15,5 @@
 }
 
 .icons_contactme {
-  @apply text-2xl sm: text-3xl text-black m-2
+  @apply text-2xl sm:text-3xl text-black m-2
 }
