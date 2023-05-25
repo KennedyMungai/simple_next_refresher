@@ -17,8 +17,8 @@ export default function Home() {
 					/>
 				</div>
 				<div className='ml-20 w-2/3'>
-					<h2>{aboutMeData.title}</h2>
-					<p>{aboutMeData.body}</p>
+					<h2 className=''>{aboutMeData.title}</h2>
+					<p className='text-base'>{aboutMeData.body}</p>
 				</div>
 			</section>
 			<section>{aboutMeData.highlightedBody}</section>
