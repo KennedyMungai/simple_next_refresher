@@ -10,7 +10,7 @@ export default function Home() {
 					<p>{aboutMeData.body}</p>
 				</div>
 			</section>
-			<section></section>
+			<section>{aboutMeData.highlightedBody}</section>
 			<section>
 				<div>Text</div>
 				<div>Image</div>
