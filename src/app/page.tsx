@@ -30,7 +30,7 @@ export default function Home() {
 				</div>
 				<div>
 					<Image
-						priority='false'
+						priority={false}
 						width={640}
 						height={960}
 						aria-label='Some Image'
