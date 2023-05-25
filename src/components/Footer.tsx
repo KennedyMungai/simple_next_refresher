@@ -8,16 +8,16 @@ const Footer = ({ contactMeLinks }: Props) => {
 	return (
 		<footer className='w-full bg-white shadow-footer mt-12 py-4 fixed bottom-0'>
 			<div className='flex items-center justify-center gap-1'>
-				<a href={} aria-label={'Email'}>
+				<a href={contactMeLinks[0]} aria-label={'Email'}>
 					<Envelope className={'icons_contactme'} />
 				</a>
-				<a href={} aria-label={'Twitter'}>
+				<a href={contactMeLinks[1]} aria-label={'Twitter'}>
 					<Twitter className={'icons_contactme'} />
 				</a>
-				<a href={} aria-label={'LinkedIn'}>
+				<a href={contactMeLinks[2]} aria-label={'LinkedIn'}>
 					<Linkedin className={'icons_contactme'} />
 				</a>
-				<a href={} aria-label={'Medium'}>
+				<a href={contactMeLinks[3]} aria-label={'Medium'}>
 					<Medium className={'icons_contactme'} />
 				</a>
 			</div>
