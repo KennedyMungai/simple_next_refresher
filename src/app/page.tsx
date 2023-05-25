@@ -5,7 +5,7 @@ export default function Home() {
 	return (
 		<main className='flex flex-col items-center mb-32 p-10'>
 			<section className='flex flex-row w-10/12 mt-10 items-center mb-6 sm:flex-col'>
-				<div className='w-1/3 sm:w-full'>
+				<div className='sm:w-1/3 w-full'>
 					<Image
 						priority={false}
 						width={640}
