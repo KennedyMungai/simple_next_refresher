@@ -28,7 +28,7 @@ export default function Home() {
 				<div>
 					<p className='flex flex-col w-7/12'>{aboutMeData.body2}</p>
 				</div>
-				<div className='sm:w-5/12 sm:ml-10 w-full ml-0'>
+				<div className='sm:w-5/12 sm:ml-10 w-full ml-0 p-10'>
 					<Image
 						priority={false}
 						width={640}
