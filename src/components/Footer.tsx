@@ -1,8 +1,10 @@
 import { Envelope, Linkedin, Medium, Twitter } from '../../public/icons'
 
-type Props = {}
+type Props = {
+	contactMeLinks: string[]
+}
 
-const Footer = (props: Props) => {
+const Footer = ({ contactMeLinks }: Props) => {
 	return (
 		<footer className='w-full bg-white shadow-footer mt-12 py-4 fixed bottom-0'>
 			<div className='flex items-center justify-center gap-1'>
