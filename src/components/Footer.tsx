@@ -5,7 +5,7 @@ type Props = {}
 const Footer = (props: Props) => {
 	return (
 		<footer className='w-full bg-white shadow-footer mt-12 py-4 fixed bottom-0'>
-			<div>
+			<div className='flex items-center justify-center gap-1'>
 				<a href={} aria-label={'Email'}>
 					<Envelope className={} />
 				</a>
