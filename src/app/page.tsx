@@ -7,6 +7,7 @@ export default function Home() {
 				<div>Image</div>
 				<div>
 					<h2>{aboutMeData.title}</h2>
+					<p>{aboutMeData.body}</p>
 				</div>
 			</section>
 			<section></section>
