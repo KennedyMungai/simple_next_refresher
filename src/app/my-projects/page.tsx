@@ -1,3 +1,5 @@
+import { projects } from '@/components/data/data'
+
 type Props = {}
 
 const MyProjects = (props: Props) => {
