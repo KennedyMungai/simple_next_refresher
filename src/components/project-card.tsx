@@ -22,7 +22,7 @@ const ProjectCard = ({
 	links
 }: Props) => {
 	return (
-		<div>
+		<div className='rounded-lg w-1/3-g shadow-lg px-5 bg-grey-light'>
 			<Image
 				aria-label={`Image of ${title} project`}
 				priority={false}
@@ -36,7 +36,7 @@ const ProjectCard = ({
 				<h3 className='text-lg font-medium'>{title}</h3>
 				<p className='text-sm mt-2 min-h-50'>{description}</p>
 				<p className='text-sm mt-2 min-h-50'>{tech_stack}</p>
-				<div className='flex flex-row mt-4 justify-between'>
+				<div className='flex flex-row mt-4 justify-between p-4'>
 					<a href={links[0].url} className='flex items-center'>
 						<Github className={'icons_contactme'} />
 						<span className='text-black'>{links[0].text}</span>
