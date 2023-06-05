@@ -34,5 +34,5 @@
 }
 
 .label-form {
-  @apply font-semibold mb-2
+  @apply font-semibold mb-2 text-xl
 }
