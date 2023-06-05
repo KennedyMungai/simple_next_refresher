@@ -32,11 +32,11 @@ const ProjectCard = ({
 				alt={title}
 				className='object-cover w-full h-48'
 			/>
-			<div>
+			<div className='p-4'>
 				<h3 className='text-lg font-medium'>{title}</h3>
 				<p className='text-sm mt-2 min-h-50'>{description}</p>
 				<p className='text-sm mt-2 min-h-50'>{tech_stack}</p>
-				<div className='flex flex-row mt-4 justify-between p-4'>
+				<div className='flex flex-row mt-4 justify-between'>
 					<a href={links[0].url} className='flex items-center'>
 						<Github className={'icons_contactme'} />
 						<span className='text-black'>{links[0].text}</span>
