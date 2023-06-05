@@ -5,13 +5,22 @@ type Props = {
 	description: string
 	tech_stack: string
 	title: string
+	source_code: string
+	hosted_site: string
 }
 
-const ProjectCard = ({ image, description, tech_stack, title }: Props) => {
+const ProjectCard = ({
+	image,
+	description,
+	tech_stack,
+	title,
+	source_code,
+	hosted_site
+}: Props) => {
 	return (
 		<div>
 			<Image
-				aria-label={}
+				aria-label={title}
 				priority={false}
 				width={500}
 				height={250}
@@ -24,11 +33,11 @@ const ProjectCard = ({ image, description, tech_stack, title }: Props) => {
 				<p className='text-sm mt-2 min-h-50'>{description}</p>
 				<p className='text-sm mt-2 min-h-50'>{tech_stack}</p>
 				<div className='flex flex-row mt-4 justify-between'>
-					<a href={} className='flex items-center'>
+					<a href={source_code} className='flex items-center'>
 						{/* Github Icon */}
 						<span className='text-black'>Source Code</span>
 					</a>
-					<a href={} className='flex items-center'>
+					<a href={hosted_site} className='flex items-center'>
 						{/* Website Icon */}
 						<span className='text-black'>Source Code</span>
 					</a>
