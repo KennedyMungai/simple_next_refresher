@@ -22,7 +22,7 @@ const ProjectCard = ({
 	links
 }: Props) => {
 	return (
-		<div className='rounded-lg w-1/3-g shadow-lg px-5 bg-grey-light'>
+		<div className='rounded-lg sm:w-1/3-g shadow-lg px-5 bg-grey-light w-full'>
 			<Image
 				aria-label={`Image of ${title} project`}
 				priority={false}
