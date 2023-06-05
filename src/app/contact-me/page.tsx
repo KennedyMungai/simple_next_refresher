@@ -4,9 +4,9 @@ type Props = {}
 
 const ContactMePage = (props: Props) => {
 	return (
-		<div>
+		<div className='flex flex-col'>
 			<h2> CONTACT ME</h2>
-			<div>
+			<div className='w-11/12 content-center m-auto'>
 				<h3>{contactMeText.title}</h3>
 				<p>{contactMeText.body}</p>
 			</div>
