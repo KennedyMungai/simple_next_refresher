@@ -12,6 +12,10 @@ const Form = ({ onSubmit }: Props) => {
 					Name
 				</label>
 				<input type='text' id='name' className='input-form' />
+				<label htmlFor='company' className='label-form'>
+					Company
+				</label>
+				<input type='text' id='company' className='input-form' />
 				<label htmlFor='email' className='label-form'>
 					Email
 				</label>
