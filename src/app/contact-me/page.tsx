@@ -8,7 +8,7 @@ const ContactMePage = (props: Props) => {
 			<h2> CONTACT ME</h2>
 			<div className='flex flex-row w-11/12 content-center m-auto bg-grey-light p-10 gap-20'>
 				<div className='w-1/2'>
-					<h3>{contactMeText.title}</h3>
+					<h3 className='text-2xl mb-10'>{contactMeText.title}</h3>
 					<p>{contactMeText.body}</p>
 				</div>
 				<div className='w-1/2'>
