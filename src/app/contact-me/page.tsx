@@ -11,6 +11,7 @@ const ContactMePage = (props: Props) => {
 					<h3>{contactMeText.title}</h3>
 					<p>{contactMeText.body}</p>
 				</div>
+				<div>{/* Form */}</div>
 			</div>
 		</div>
 	)
