@@ -1,11 +1,17 @@
 import Image from 'next/image'
 
+
+interface ILink {
+	text: string
+	url: string
+}
+
 type Props = {
 	image: string
 	description: string
 	tech_stack: string
 	title: string
-	link: []
+	link: ILink[]
 }
 
 const ProjectCard = ({
@@ -31,11 +37,11 @@ const ProjectCard = ({
 				<p className='text-sm mt-2 min-h-50'>{description}</p>
 				<p className='text-sm mt-2 min-h-50'>{tech_stack}</p>
 				<div className='flex flex-row mt-4 justify-between'>
-					<a href={source_code} className='flex items-center'>
+					<a href={link[0].url} className='flex items-center'>
 						{/* Github Icon */}
 						<span className='text-black'>Source Code</span>
 					</a>
-					<a href={hosted_site} className='flex items-center'>
+					<a href={link[1].url} className='flex items-center'>
 						{/* Website Icon */}
 						<span className='text-black'>Source Code</span>
 					</a>
