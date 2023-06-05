@@ -1,5 +1,5 @@
 import Image from 'next/image'
-
+import { Github, Window } from '../../public/icons'
 
 interface ILink {
 	text: string
