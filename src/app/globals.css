@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer base {
-  h1, h2, h3, h4 {
+  h1, h2, h3, h4, label, input {
     font-family: Oswald, Proxima Nova, system-ui, sans-serif;
   }
   html {
@@ -34,5 +34,5 @@
 }
 
 .label-form {
-  @apply font-bold mb-2
+  @apply font-semibold mb-2
 }
