@@ -1,7 +1,7 @@
 type Props = {}
 
-const page = (props: Props) => {
+const ContactMePage = (props: Props) => {
 	return <div>page</div>
 }
 
-export default page
+export default ContactMePage
