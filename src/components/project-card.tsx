@@ -20,7 +20,7 @@ const ProjectCard = ({
 	return (
 		<div>
 			<Image
-				aria-label={title}
+				aria-label={`Image of ${title} project`}
 				priority={false}
 				width={500}
 				height={250}
