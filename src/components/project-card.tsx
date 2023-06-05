@@ -39,11 +39,11 @@ const ProjectCard = ({
 				<div className='flex flex-row mt-4 justify-between'>
 					<a href={links[0].url} className='flex items-center'>
 						{/* Github Icon */}
-						<span className='text-black'>Source Code</span>
+						<span className='text-black'>{links[0].text}</span>
 					</a>
 					<a href={links[1].url} className='flex items-center'>
 						{/* Website Icon */}
-						<span className='text-black'>Source Code</span>
+						<span className='text-black'>{links[1].text}</span>
 					</a>
 				</div>
 			</div>
