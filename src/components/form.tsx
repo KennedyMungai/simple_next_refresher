@@ -1,9 +1,16 @@
-type Props = {}
+import { FormEvent } from 'react'
 
-const Form = (props: Props) => {
+type Props = {
+	onSubmit: (e: FormEvent<HTMLFormElement>) => void
+}
+
+const Form = ({ onSubmit }: Props) => {
 	return (
-		<form>
-			<div></div>
+		<form onSubmit={onSubmit}>
+			<div>
+				<label htmlFor='name'>Name</label>
+				<input type='text' id='name' />
+			</div>
 		</form>
 	)
 }
