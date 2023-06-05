@@ -28,3 +28,7 @@
   object-fit: cover;
   object-position: 50% 4%;
 }
+
+.input-form {
+  @apply border border-grey rounded-md w-full p-2
+}
