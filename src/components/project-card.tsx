@@ -24,7 +24,7 @@ const ProjectCard = ({
 				priority={false}
 				width={500}
 				height={250}
-				src={image}
+				src={`/images/${image}`}
 				alt={title}
 				className=''
 			/>
