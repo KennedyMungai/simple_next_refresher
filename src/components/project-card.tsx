@@ -26,7 +26,7 @@ const ProjectCard = ({
 				height={250}
 				src={`/images/${image}`}
 				alt={title}
-				className=''
+				className='object-cover w-full h-48'
 			/>
 			<div>
 				<h3 className='text-lg font-medium'>{title}</h3>
