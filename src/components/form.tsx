@@ -1,7 +1,11 @@
 type Props = {}
 
 const Form = (props: Props) => {
-	return <div>form</div>
+	return (
+		<form>
+			<div></div>
+		</form>
+	)
 }
 
 export default Form
