@@ -1,4 +1,5 @@
 import { projects } from '@/components/data/data'
+import ProjectCard from '@/components/project-card'
 
 type Props = {}
 
