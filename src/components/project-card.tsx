@@ -5,8 +5,7 @@ type Props = {
 	description: string
 	tech_stack: string
 	title: string
-	source_code: string
-	hosted_site: string
+	link: []
 }
 
 const ProjectCard = ({
@@ -14,8 +13,7 @@ const ProjectCard = ({
 	description,
 	tech_stack,
 	title,
-	source_code,
-	hosted_site
+	link
 }: Props) => {
 	return (
 		<div>
