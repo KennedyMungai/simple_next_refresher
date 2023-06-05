@@ -38,11 +38,11 @@ const ProjectCard = ({
 				<p className='text-sm mt-2 min-h-50'>{tech_stack}</p>
 				<div className='flex flex-row mt-4 justify-between'>
 					<a href={links[0].url} className='flex items-center'>
-						{/* Github Icon */}
+						<Github className={'icons_contactme'} />
 						<span className='text-black'>{links[0].text}</span>
 					</a>
 					<a href={links[1].url} className='flex items-center'>
-						{/* Website Icon */}
+						<Window className={'icons_contactme'} />
 						<span className='text-black'>{links[1].text}</span>
 					</a>
 				</div>
