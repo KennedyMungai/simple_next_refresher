@@ -11,7 +11,7 @@ type Props = {
 	description: string
 	tech_stack: string
 	title: string
-	link: ILink[]
+	links: ILink[]
 }
 
 const ProjectCard = ({
@@ -19,7 +19,7 @@ const ProjectCard = ({
 	description,
 	tech_stack,
 	title,
-	link
+	links
 }: Props) => {
 	return (
 		<div>
@@ -37,11 +37,11 @@ const ProjectCard = ({
 				<p className='text-sm mt-2 min-h-50'>{description}</p>
 				<p className='text-sm mt-2 min-h-50'>{tech_stack}</p>
 				<div className='flex flex-row mt-4 justify-between'>
-					<a href={link[0].url} className='flex items-center'>
+					<a href={links[0].url} className='flex items-center'>
 						{/* Github Icon */}
 						<span className='text-black'>Source Code</span>
 					</a>
-					<a href={link[1].url} className='flex items-center'>
+					<a href={links[1].url} className='flex items-center'>
 						{/* Website Icon */}
 						<span className='text-black'>Source Code</span>
 					</a>
