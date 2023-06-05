@@ -1,3 +1,4 @@
+import Form from '@/components/form'
 import { contactMeText } from '../../components/data/data'
 
 type Props = {}
@@ -12,7 +13,7 @@ const ContactMePage = (props: Props) => {
 					<p>{contactMeText.body}</p>
 				</div>
 				<div className='w-1/2'>
-					<p>Test Text</p>
+					<Form />
 				</div>
 			</div>
 		</div>
