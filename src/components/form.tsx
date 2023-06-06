@@ -11,6 +11,8 @@ const Form = () => {
 			email: String(e.target.email.value),
 			message: String(e.target.message.value)
 		}
+
+		console.log(data)
 	}
 
 	return (
