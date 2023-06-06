@@ -54,12 +54,14 @@ const Form = () => {
 					className='input-form'
 				></textarea>
 			</div>
-			<button
-				type='submit'
-				className='bg-blue p-4 rounded-md text-white hover:bg-white hover:text-blue'
-			>
-				Send Message
-			</button>
+			<div className='flex align-items justify-center'>
+				<button
+					type='submit'
+					className='bg-blue p-4 rounded-md text-white hover:bg-white hover:text-blue'
+				>
+					Send Message
+				</button>
+			</div>
 		</form>
 	)
 }
