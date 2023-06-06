@@ -17,6 +17,9 @@ const Form = () => {
 					id='name'
 					className='input-form'
 					placeholder='Name'
+					required
+					minLength={3}
+					maxLength={200}
 				/>
 			</div>
 			<div className='mb-4'>
@@ -28,6 +31,9 @@ const Form = () => {
 					id='company'
 					className='input-form'
 					placeholder='Company'
+					required
+					minLength={3}
+					maxLength={200}
 				/>
 			</div>
 			<div className='mb-4'>
@@ -39,6 +45,9 @@ const Form = () => {
 					id='email'
 					className='input-form'
 					placeholder='Email'
+					required
+					minLength={3}
+					maxLength={200}
 				/>
 			</div>
 			<div className='mb-4'>
@@ -52,6 +61,9 @@ const Form = () => {
 					rows={5}
 					placeholder='Your Message'
 					className='input-form'
+					required
+					minLength={3}
+					maxLength={1000}
 				></textarea>
 			</div>
 			<div className='flex align-items justify-center'>
