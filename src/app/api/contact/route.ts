@@ -1,10 +1,10 @@
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 
 const fs = require('fs')
 
 const path = require('path')
 
-export async function POST(request)
+export async function POST(request: NextRequest)
 {
     const data = request.json()
 
