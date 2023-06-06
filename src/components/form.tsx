@@ -7,19 +7,38 @@ type Props = {
 const Form = ({ onSubmit }: Props) => {
 	return (
 		<form onSubmit={onSubmit}>
-			<div className='mb-4'>
+			<div>
 				<label htmlFor='name' className='label-form' placeholder='Name'>
 					Name
 				</label>
-				<input type='text' id='name' className='input-form' placeholder='Company' />
+				<input
+					type='text'
+					id='name'
+					className='input-form'
+					placeholder='Name'
+				/>
+			</div>
+			<div className='mb-4'>
 				<label htmlFor='company' className='label-form'>
 					Company
 				</label>
-				<input type='text' id='company' className='input-form' />
+				<input
+					type='text'
+					id='company'
+					className='input-form'
+					placeholder='Company'
+				/>
+			</div>
+			<div className='mb-4'>
 				<label htmlFor='email' className='label-form'>
 					Email
 				</label>
-				<input type='text' id='email' className='input-form' placeholder='Email' />
+				<input
+					type='text'
+					id='email'
+					className='input-form'
+					placeholder='Email'
+				/>
 			</div>
 		</form>
 	)
