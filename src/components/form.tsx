@@ -53,6 +53,13 @@ const Form = ({ onSubmit }: Props) => {
 					className='input-form'
 				></textarea>
 			</div>
+			<button
+				type='submit'
+				className='bg-blue p-4 rounded-md text-white hover:bg-white hover:text-blue'
+				onClick={onSubmit}
+			>
+				Send Message
+			</button>
 		</form>
 	)
 }
