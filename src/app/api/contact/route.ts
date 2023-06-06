@@ -28,6 +28,11 @@ export async function POST(request)
     } catch (error: any) {
         console.error('Error Writing this file. Message - '+ error.message)
     }
+
+    return NextResponse.json({
+        data, 
+        message: "This message has been successfully sent"
+    })
 }
 
 // export async function GET()
