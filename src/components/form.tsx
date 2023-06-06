@@ -40,6 +40,19 @@ const Form = ({ onSubmit }: Props) => {
 					placeholder='Email'
 				/>
 			</div>
+			<div className='mb-4'>
+				<label htmlFor='message' className='label-form'>
+					Message
+				</label>
+				<textarea
+					name='message'
+					id='message'
+					cols={30}
+					rows={5}
+					placeholder='Your Message'
+					className='input-form'
+				></textarea>
+			</div>
 		</form>
 	)
 }
