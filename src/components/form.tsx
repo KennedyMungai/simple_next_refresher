@@ -1,12 +1,13 @@
+'use client'
 import { FormEvent } from 'react'
 
-type Props = {
-	onSubmit: (e: FormEvent<HTMLFormElement>) => void
-}
+const Form = () => {
+	const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+		e.preventDefault()
+	}
 
-const Form = ({ onSubmit }: Props) => {
 	return (
-		<form onSubmit={onSubmit} className='bg-grey-light p-4 rounded-md'>
+		<form onSubmit={handleSubmit} className='bg-grey-light p-4 rounded-md'>
 			<div>
 				<label htmlFor='name' className='label-form' placeholder='Name'>
 					Name
@@ -56,7 +57,6 @@ const Form = ({ onSubmit }: Props) => {
 			<button
 				type='submit'
 				className='bg-blue p-4 rounded-md text-white hover:bg-white hover:text-blue'
-				onClick={onSubmit}
 			>
 				Send Message
 			</button>
