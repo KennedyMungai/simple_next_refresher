@@ -57,7 +57,7 @@ const Form = () => {
 			<div className='flex align-items justify-center'>
 				<button
 					type='submit'
-					className='bg-blue p-4 rounded-md text-white hover:bg-white hover:text-blue'
+					className='bg-blue p-4 rounded-md text-white hover:bg-white hover:border hover:text-blue hover:border-1 hover:border-blue'
 				>
 					Send Message
 				</button>
