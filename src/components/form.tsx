@@ -17,6 +17,26 @@ const Form = () => {
 			message
 		}
 
+		try {
+			const response = await fetch('/api/contact', {
+				method: 'POST',
+				body: JSON.stringify(data),
+				headers: { 'Content-Type': 'application/json' }
+			})
+
+			if (!response.ok) {
+				throw new Error(
+					'Something went wrong. Status' + response.status
+				)
+			}
+
+			const responseData = await response.json()
+
+			console.log(responseData)
+		} catch (error: any) {
+			console.log(error.message)
+		}
+
 		console.log(data)
 	}
 
