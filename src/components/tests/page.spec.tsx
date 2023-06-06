@@ -6,7 +6,7 @@ describe('My Projects Page', () => {
 	it('should render correctly', () => {
 		render(<MyProjects />)
 
-        const button = screen.getByRole('button', { name: 'Send Message' })
+        const button = screen.getAllByRole('button', { name: 'Send Message' })
 		expect(button).toBeInTheDocument()
 
 		const title = screen.getByText('My Projects')
