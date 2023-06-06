@@ -38,6 +38,11 @@ const Form = () => {
 		}
 
 		console.log(data)
+
+		setName('')
+		setEmail('')
+		setCompany('')
+		setMessage('')
 	}
 
 	return (
