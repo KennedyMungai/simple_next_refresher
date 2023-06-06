@@ -1,15 +1,20 @@
 'use client'
-import { FormEvent } from 'react'
+import { FormEvent, useState } from 'react'
 
 const Form = () => {
+	const [name, setName] = useState('')
+	const [company, setCompany] = useState('')
+	const [email, setEmail] = useState('')
+	const [message, setMessage] = useState('')
+
 	const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
 		e.preventDefault()
 
 		const data = {
-			name: String(e.target.name.value),
-			company: String(e.target.company.value),
-			email: String(e.target.email.value),
-			message: String(e.target.message.value)
+			name,
+			company,
+			email,
+			message
 		}
 
 		console.log(data)
@@ -29,6 +34,8 @@ const Form = () => {
 					required
 					minLength={3}
 					maxLength={200}
+					value={name}
+					onChange={(e) => setName(e.target.value)}
 				/>
 			</div>
 			<div className='mb-4'>
@@ -43,6 +50,8 @@ const Form = () => {
 					required
 					minLength={3}
 					maxLength={200}
+					value={company}
+					onChange={(e) => setCompany(e.target.value)}
 				/>
 			</div>
 			<div className='mb-4'>
@@ -57,6 +66,8 @@ const Form = () => {
 					required
 					minLength={3}
 					maxLength={200}
+					value={email}
+					onChange={(e) => setEmail(e.target.value)}
 				/>
 			</div>
 			<div className='mb-4'>
@@ -73,6 +84,8 @@ const Form = () => {
 					required
 					minLength={3}
 					maxLength={1000}
+					value={message}
+					onChange={(e) => setMessage(e.target.value)}
 				></textarea>
 			</div>
 			<div className='flex align-items justify-center'>
