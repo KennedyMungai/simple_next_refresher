@@ -6,7 +6,7 @@ type Props = {
 
 const Form = ({ onSubmit }: Props) => {
 	return (
-		<form onSubmit={onSubmit}>
+		<form onSubmit={onSubmit} className='bg-grey-light p-4 rounded-md'>
 			<div>
 				<label htmlFor='name' className='label-form' placeholder='Name'>
 					Name
