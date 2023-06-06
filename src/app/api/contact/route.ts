@@ -7,6 +7,8 @@ const path = require('path')
 export async function POST(request)
 {
     const data = request.json()
+
+    const filePath = path.resolve(process.cwd(), )
 }
 
 // export async function GET()
