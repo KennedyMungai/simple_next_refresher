@@ -37,8 +37,6 @@ const Form = () => {
 			console.log(error.message)
 		}
 
-		console.log(data)
-
 		setName('')
 		setEmail('')
 		setCompany('')
