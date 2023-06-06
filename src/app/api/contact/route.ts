@@ -6,7 +6,7 @@ const path = require('path')
 
 export async function POST(request: NextRequest)
 {
-    const data = request.json()
+    const data = await request.json()
 
     const filePath = path.resolve(process.cwd(), 'app/data/submission.json')
 
