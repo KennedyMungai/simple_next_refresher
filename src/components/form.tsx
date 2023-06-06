@@ -4,6 +4,13 @@ import { FormEvent } from 'react'
 const Form = () => {
 	const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
 		e.preventDefault()
+
+		const data = {
+			name: String(e.target.name.value),
+			company: String(e.target.company.value),
+			email: String(e.target.email.value),
+			message: String(e.target.message.value)
+		}
 	}
 
 	return (
