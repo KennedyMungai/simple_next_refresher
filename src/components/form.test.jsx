@@ -14,7 +14,19 @@ describe('The Contact Form Component', () => {
         
         fireEvent.change(screen.getByLabelText('Email'), {
 			target: {
-				value: 'Watu Wenda'
+				value: 'kijana@mangaa.com'
+			}
+		})
+
+		fireEvent.change(screen.getByLabelText('Company'), {
+			target: {
+				value: "Kijana Mang'aa"
+			}
+		})
+
+		fireEvent.change(screen.getByLabelText('Message'), {
+			target: {
+				value: 'I invite you to some work event'
 			}
 		})
 	})
