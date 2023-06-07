@@ -97,6 +97,10 @@ describe('The Contact Form Component', () => {
 			name: 'Send Message'
 		})
 
-		await waitFor(() => screen.getByText('Thank you for contacting us!'))
+		await waitFor(() => {
+			expect(consoleSpy).toHaveBeenCalledWith(
+				'There was a problem with the fetch operation HTTP error! status: 400'
+			)
+		})
 	})
 })
