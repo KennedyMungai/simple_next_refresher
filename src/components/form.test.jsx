@@ -14,6 +14,10 @@ const handlers = [
 const server = setupServer(...handlers)
 
 describe('The Contact Form Component', () => {
+	beforeAll(() => server.listen())
+	afterEach(() => server.restoreHandlers())
+	afterAll(() => server.resetHandlers())
+
 	it('Should submit the form and show a successful message', async () => {
 		render(<Form />)
 
