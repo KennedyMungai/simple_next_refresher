@@ -3,7 +3,7 @@ import { render, screen, fireEvent, waitFOr } from '@testing-library/react'
 import Form from './Form'
 
 describe('The Contact Form Component', () => {
-	it('Should submit the form and show a successful message', () => {
+	it('Should submit the form and show a successful message', async () => {
 		render(<Form />)
 
 		fireEvent.change(screen.getByLabelText('Name'), {
@@ -11,8 +11,8 @@ describe('The Contact Form Component', () => {
 				value: "Kijana Mang'aa"
 			}
 		})
-        
-        fireEvent.change(screen.getByLabelText('Email'), {
+
+		fireEvent.change(screen.getByLabelText('Email'), {
 			target: {
 				value: 'kijana@mangaa.com'
 			}
@@ -29,11 +29,11 @@ describe('The Contact Form Component', () => {
 				value: 'I invite you to some work event'
 			}
 		})
-        
-        fireEvent.submit(screen.getByRole('button'), {
+
+		fireEvent.submit(screen.getByRole('button'), {
 			name: 'Send Message'
 		})
 
-		waitFOr(() => screen.getByText('Thank you for contacting us!'))
+		await waitFOr(() => screen.getByText('Thank you for contacting us!'))
 	})
 })
