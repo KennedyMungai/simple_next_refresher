@@ -11,5 +11,11 @@ describe('The Contact Form Component', () => {
 				value: "Kijana Mang'aa"
 			}
 		})
+        
+        fireEvent.change(screen.getByLabelText('Email'), {
+			target: {
+				value: 'Watu Wenda'
+			}
+		})
 	})
 })
