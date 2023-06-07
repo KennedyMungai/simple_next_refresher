@@ -76,7 +76,7 @@ describe('The Contact Form Component', () => {
 
 		fireEvent.change(screen.getByLabelText('Email'), {
 			target: {
-				value: 'kijana@mangaa.com'
+				value: 'internal_error@response.com'
 			}
 		})
 
