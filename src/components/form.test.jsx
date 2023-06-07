@@ -5,5 +5,11 @@ import Form from './Form'
 describe('The Contact Form Component', () => {
 	it('Should submit the form and show a successful message', () => {
 		render(<Form />)
+
+		fireEvent.change(screen.getByLabelText('Name'), {
+			target: {
+				value: "Kijana Mang'aa"
+			}
+		})
 	})
 })
