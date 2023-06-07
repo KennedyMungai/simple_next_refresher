@@ -7,7 +7,18 @@ import Form from './Form'
 
 
 const handlers = [
-	rest.post('/api/contact', (req, res, ctx) => {
+	rest.post('/api/contact', async (req, res, ctx) => {
+		const { email } = await req.json()
+
+		if (email === 'bad_request@response.com') {
+			return res(ctx.status(400), ctx.json({ message: 'Bad Request' }))
+		} else if (email === 'internal_error@response.com') {
+			return res(
+				ctx.status(500),
+				ctx.json({ message: 'Internal Server Error' })
+			)
+		}
+
 		return res(ctx.status(200))
 	})
 ]
