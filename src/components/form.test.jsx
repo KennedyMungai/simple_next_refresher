@@ -29,5 +29,11 @@ describe('The Contact Form Component', () => {
 				value: 'I invite you to some work event'
 			}
 		})
+        
+        fireEvent.submit(screen.getByRole('button'), {
+			name: 'Send Message'
+		})
+
+		waitFOr(() => screen.getByText('Thank you for contacting us!'))
 	})
 })
