@@ -64,8 +64,7 @@ describe('The Contact Form Component', () => {
 		await waitFor(() => screen.getByText('Thank you for contacting us!'))
 	})
 
-	it('Should handle a 400 Bad Request response', () =>
-	{
+	it('Should handle a 400 Bad Request response', async () => {
 		render(<Form />)
 
 		fireEvent.change(screen.getByLabelText('Name'), {
