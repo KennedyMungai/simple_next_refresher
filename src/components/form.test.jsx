@@ -49,6 +49,6 @@ describe('The Contact Form Component', () => {
 			name: 'Send Message'
 		})
 
-		await waitFOr(() => screen.getByText('Thank you for contacting us!'))
+		await waitFor(() => screen.getByText('Thank you for contacting us!'))
 	})
 })
