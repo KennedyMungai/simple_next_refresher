@@ -63,4 +63,39 @@ describe('The Contact Form Component', () => {
 
 		await waitFor(() => screen.getByText('Thank you for contacting us!'))
 	})
+
+	it('Should handle a 400 Bad Request response', () =>
+	{
+		render(<Form />)
+
+		fireEvent.change(screen.getByLabelText('Name'), {
+			target: {
+				value: "Kijana Mang'aa"
+			}
+		})
+
+		fireEvent.change(screen.getByLabelText('Email'), {
+			target: {
+				value: 'kijana@mangaa.com'
+			}
+		})
+
+		fireEvent.change(screen.getByLabelText('Company'), {
+			target: {
+				value: "Kijana Mang'aa"
+			}
+		})
+
+		fireEvent.change(screen.getByLabelText('Message'), {
+			target: {
+				value: 'I invite you to some work event'
+			}
+		})
+
+		fireEvent.submit(screen.getByRole('button'), {
+			name: 'Send Message'
+		})
+
+		await waitFor(() => screen.getByText('Thank you for contacting us!'))
+	})
 })
