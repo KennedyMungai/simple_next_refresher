@@ -26,6 +26,8 @@ const handlers = [
 const server = setupServer(...handlers)
 
 describe('The Contact Form Component', () => {
+	const consoleSpy = jest.spyOn(console, 'log').mockImplementation()
+
 	beforeAll(() => server.listen())
 	afterEach(() => server.restoreHandlers())
 	afterAll(() => server.resetHandlers())
