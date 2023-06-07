@@ -29,8 +29,8 @@ describe('The Contact Form Component', () => {
 	const consoleSpy = jest.spyOn(console, 'log').mockImplementation()
 
 	beforeAll(() => server.listen())
-	afterEach(() => server.restoreHandlers())
-	afterAll(() => server.resetHandlers())
+	afterEach(() => server.restoreHandlers(), consoleSpy.mockClear())
+	afterAll(() => server.resetHandlers(), consoleSpy.mockReset())
 
 	it('Should submit the form and show a successful message', async () => {
 		render(<Form />)
