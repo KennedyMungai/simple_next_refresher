@@ -19,7 +19,7 @@ const handlers = [
 			)
 		}
 
-		return res(ctx.status(200))
+		return res(ctx.status(200), ctx.json({ message: 'Success' }))
 	})
 ]
 
