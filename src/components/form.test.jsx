@@ -1,8 +1,8 @@
 import '@testing-library/jest-dom'
-import { render, screen, fireEvent, waitFor } from '@testing-library/react'
-import Form from './Form'
-import { setupServer } from 'msw-node'
+import { fireEvent, render, screen, waitFor } from '@testing-library/react'
 import { rest } from 'msw'
+import { setupServer } from 'msw-node'
+import Form from './Form'
 
 
 const handlers = [
